@@ -1,49 +1,50 @@
-🔒 Image Steganography using OpenCV
+# 🔒 Image Steganography using OpenCV
 
-This project allows you to hide and retrieve secret messages within an image using Python & OpenCV. The encryption process modifies the pixel values of the image to store the message securely, which can later be decrypted using the correct passcode.
+This project allows you to **hide and retrieve secret messages** within an image using **Python & OpenCV**. The encryption process modifies the pixel values of the image to store the message securely, which can later be decrypted using the correct passcode.
 
-📌 Features
+---
 
-✅ Encrypt text into an image without noticeable changes.✅ Secure decryption with a passcode.✅ Stores message length for accurate extraction.✅ Uses OpenCV for image manipulation.✅ Works with any image format (JPG, PNG, etc.).
+## 📌 Features
+✅ Encrypt text into an image without noticeable changes.  
+✅ Secure decryption with a passcode.  
+✅ Stores message length for accurate extraction.  
+✅ Uses OpenCV for image manipulation.  
+✅ Works with **any image format** (JPG, PNG, etc.).
 
-🛠️ Setup & Installation
+---
 
-1️⃣ Clone the Repository
+## 🛠️ Setup & Installation
 
-git clone 
-
-2️⃣ Install Dependencies
-
-Ensure you have Python 3.x installed, then run:
-
+### ** Install Dependencies**
+Ensure you have **Python 3.x** installed, then run:
+```bash
 pip install opencv-python
+```
 
-🔹 Usage
+---
 
-🔐 Encrypt a Message
+## 🔹 Usage
+### **🔐 Encrypt a Message**
+1. Place your image in the project folder (e.g., `mypic.jpg`).
+2. Run the encryption script:
+   ```bash
+   python encrypt.py
+   ```
+3. Enter your **secret message** and **passcode**.
+4. The encrypted image (`encryptedImage.jpg`) will be generated.
 
-Place your image in the project folder (e.g., mypic.jpg).
+### **🔓 Decrypt a Message**
+1. Run the decryption script:
+   ```bash
+   python decrypt.py
+   ```
+2. Enter the **correct passcode**.
+3. The **hidden message** will be displayed.
 
-Run the encryption script:
+---
 
-python encrypt.py
-
-Enter your secret message and passcode.
-
-The encrypted image (encryptedImage.jpg) will be generated.
-
-🔓 Decrypt a Message
-
-Run the decryption script:
-
-python decrypt.py
-
-Enter the correct passcode.
-
-The hidden message will be displayed.
-
-📁 Project Structure
-
+## 📁 Project Structure
+```
 image-steganography/
 │── encrypt.py            # Encryption script
 │── decrypt.py            # Decryption script
@@ -51,27 +52,37 @@ image-steganography/
 │── mypic.jpg             # Original image
 │── encryptedImage.jpg    # Encrypted image (generated output)
 │── README.md             # Project documentation
+```
 
-📷 Example
+---
 
+## 📷 Example
+```
 Enter secret message: Hello, World!
 Enter a passcode: 1234
 Encryption complete. Image saved as 'encryptedImage.jpg'.
-
+```
+```
 Enter passcode for decryption: 1234
 Decrypted message: Hello, World!
+```
 
-🛠️ Future Improvements
+---
 
-🔹 Improve encryption security using cryptographic methods.🔹 Add a GUI for easier interaction.🔹 Support for different image formats.
+## 🛠️ Future Improvements
+🔹 Improve encryption security using cryptographic methods.  
+🔹 Add a GUI for easier interaction.  
+🔹 Support for different image formats.  
 
-📜 License
+---
 
-This project is open-source under the MIT License.
+## 📜 License
+This project is **open-source** under the MIT License.
 
-🤝 Contributing
+---
 
-Pull requests are welcome! If you find any bugs or have suggestions, feel free to open an issue.
+## 🤝 Contributing
+Pull requests are welcome! If you find any bugs or have suggestions, feel free to open an **issue**.
 
-🚀 Happy Coding!
+🚀 **Happy Coding!**
 
